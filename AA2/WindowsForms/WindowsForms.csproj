@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A44C2D17-9E3A-4FB8-9BF0-BD7F7C3764DC}</ProjectGuid>
+    <ProjectGuid>{33E93263-B51C-4972-A5FB-00B0AFC0243B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ventanas</RootNamespace>
-    <AssemblyName>Ventanas</AssemblyName>
+    <RootNamespace>WindowsForms</RootNamespace>
+    <AssemblyName>WindowsForms</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,52 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Altas.cs">
+    <Compile Include="frmDatos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Altas.Designer.cs">
-      <DependentUpon>Altas.cs</DependentUpon>
+    <Compile Include="frmDatos.Designer.cs">
+      <DependentUpon>frmDatos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Bajas.cs">
+    <Compile Include="frmRegistrar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Bajas.Designer.cs">
-      <DependentUpon>Bajas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Consultar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Consultar.Designer.cs">
-      <DependentUpon>Consultar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Modificar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Modificar.Designer.cs">
-      <DependentUpon>Modificar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Principal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Principal.Designer.cs">
-      <DependentUpon>Principal.cs</DependentUpon>
+    <Compile Include="frmRegistrar.Designer.cs">
+      <DependentUpon>frmRegistrar.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Altas.resx">
-      <DependentUpon>Altas.cs</DependentUpon>
+    <EmbeddedResource Include="frmDatos.resx">
+      <DependentUpon>frmDatos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Bajas.resx">
-      <DependentUpon>Bajas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Consultar.resx">
-      <DependentUpon>Consultar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Modificar.resx">
-      <DependentUpon>Modificar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Principal.resx">
-      <DependentUpon>Principal.cs</DependentUpon>
+    <EmbeddedResource Include="frmRegistrar.resx">
+      <DependentUpon>frmRegistrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -117,7 +90,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
-      <Project>{2a5fd23e-88db-48a6-915b-c9f87a7c00ba}</Project>
+      <Project>{e9053d2d-b6ae-4baa-96ae-91a9aa457de0}</Project>
       <Name>BusinessLogicLayer</Name>
     </ProjectReference>
   </ItemGroup>

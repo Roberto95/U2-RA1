@@ -31,7 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtArchivo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtContenido = new System.Windows.Forms.TextBox();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -59,19 +60,31 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Contenido";
             // 
-            // textBox1
+            // txtContenido
             // 
-            this.textBox1.Location = new System.Drawing.Point(17, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtContenido.Location = new System.Drawing.Point(17, 90);
+            this.txtContenido.Multiline = true;
+            this.txtContenido.Name = "txtContenido";
+            this.txtContenido.Size = new System.Drawing.Size(242, 135);
+            this.txtContenido.TabIndex = 3;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(184, 231);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 4;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // Altas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(284, 265);
+            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.txtContenido);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtArchivo);
             this.Controls.Add(this.label1);
@@ -87,6 +100,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtArchivo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtContenido;
+        private System.Windows.Forms.Button btnGuardar;
     }
 }

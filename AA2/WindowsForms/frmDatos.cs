@@ -9,22 +9,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ventanas
+namespace WindowsForms
 {
-    public partial class Bajas : Form
+    public partial class frmDatos : Form
     {
-        public Bajas()
+        public frmDatos()
         {
             InitializeComponent();
         }
 
-
-        private void btnEliminar_Click(object sender, EventArgs e)
+        private void frmDatos_Load(object sender, EventArgs e)
         {
-            Operaciones op = new Operaciones();
-            //se implementa el metodo eliminar
-            op.eliminarArchivo(txtArchivo.Text);
-            txtArchivo.Clear();
+            guardarEntxt g = new guardarEntxt();
+            txtDatos.Text = g.leerCaracteres();
         }
     }
 }
